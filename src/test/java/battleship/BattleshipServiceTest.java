@@ -1,18 +1,12 @@
 package battleship;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-import util.Matches;
 
 import static battleship.Ship.Builder.aShip;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.Mockito.verify;
 import static util.ArgumentMatchers.argThatMatches;
 import static util.ArgumentMatchers.argThatMatchesExactly;
-import static util.Matches.mmatches;
 
 class BattleshipServiceTest {
 
