@@ -49,8 +49,8 @@ public class Ship {
             return this;
         }
 
-        public Builder position(String from, String to) {
-            ship.setPosition(new Position(from, to));
+        public Builder position(String start, String end) {
+            ship.setPosition(new Position(start, end));
             return this;
         }
 

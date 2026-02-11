@@ -1,31 +1,31 @@
 package battleship;
 
 public class Position {
-    private String from;
-    private String to;
+    private String start;
+    private String end;
 
     public Position() {
     }
 
-    public Position(String from, String to) {
-        this.from = from;
-        this.to = to;
+    public Position(String start, String to) {
+        this.start = start;
+        this.end = to;
     }
 
-    public String getFrom() {
-        return from;
+    public String getStart() {
+        return start;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    public void setStart(String start) {
+        this.start = start;
     }
 
-    public String getTo() {
-        return to;
+    public String getEnd() {
+        return end;
     }
 
-    public void setTo(String to) {
-        this.to = to;
+    public void setEnd(String end) {
+        this.end = end;
     }
 
 
@@ -40,13 +40,13 @@ public class Position {
             return new Builder();
         }
 
-        public Builder from(String from) {
-            position.setFrom(from);
+        public Builder start(String start) {
+            position.setStart(start);
             return this;
         }
 
-        public Builder to(String to) {
-            position.setTo(to);
+        public Builder end(String to) {
+            position.setEnd(to);
             return this;
         }
 

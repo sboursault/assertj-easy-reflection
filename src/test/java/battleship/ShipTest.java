@@ -7,10 +7,6 @@ import java.util.List;
 import static battleship.Ship.Builder.aShip;
 import static util.Assertions.assertThat;
 
-
-// MENTION THAT THERE'S A PRECISE MESSAGE WHEN THE TEST FAILS
-// VERIFY ALL THIS WORKS WITH ARRAYS
-
 class ShipTest {
 
     @Test
@@ -34,15 +30,14 @@ class ShipTest {
     void matches() {
         Ship result = aShip()
                 .name("Battleship")
-                .position("A6", "...")
+                .position("A6", "D6")
                 .hits("1", "2")
                 .build();
 
         assertThat(result).matches(
                 aShip()
                         .name("Battleship")
-                        .position("A6", "...")
-                        //.hits("1", "2")
+                        .position("A6", "E6")
                         .build()
         );
     }
